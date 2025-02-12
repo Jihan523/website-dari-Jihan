@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dari Jihan!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cake">
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+        </div>
+        <h1>Happy Level Up "Rika Febriana"!</h1>
+        <p>Wishing you a day that's as amazing as you are!</p>
+
+        <div class="balloon-container">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+
+        <div class="message-box">
+            <textarea placeholder="Tulis ucapanmu di sini..." rows="4"></textarea>
+            <button class="send-button">Kirim</button>
+        </div>
+
+        <button class="celebrate-button" onclick="celebrate()">Rayakan!</button>
+    </div>
+
+    <div class="confetti-container"></div>
+
+    <script>
+        function celebrate() {
+            const confettiContainer = document.querySelector('.confetti-container');
+            confettiContainer.classList.add('active');
+            setTimeout(() => {
+                confettiContainer.classList.remove('active');
+            }, 4000); // Confetti hilang setelah 4 detik
+        }
+    </script>
+</body>
+</html>
